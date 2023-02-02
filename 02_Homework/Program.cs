@@ -14,24 +14,39 @@
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. 
 
-Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-while (num > 999)
+// while (num > 999)
+// {
+//     int result = num / 10;
+//     num = result;
+// }
+
+// if (num < 1000 && num >= 100)
+// {
+//     int result2 = num % 10;
+//     Console.WriteLine($"Третья цифра числа: {result2}");
+// }
+
+// else if (num < 100)
+// {
+//     Console.WriteLine("Третьей цифры нет");
+
+// }
+
+Console.WriteLine("Введите число обозначающее день недели: ");
+int Day = Convert.ToInt32(Console.ReadLine());
+
+if (Day==6 || Day==7)
 {
-    int result = num / 10;
-    num = result;
+    System.Console.WriteLine("сегодня выходной, ура ура");
 }
-
-if (num < 1000 && num >= 100)
+else if (Day>7 || Day<1)
 {
-    int result2 = num % 10;
-    Console.WriteLine($"Третья цифра числа: {result2}");
+    System.Console.WriteLine("такого дня недели не существует");
 }
-
-else if (num < 100)
+else 
 {
-    Console.WriteLine("Третьей цифры нет");
-
+    System.Console.WriteLine("все еще будни");
 }
-
