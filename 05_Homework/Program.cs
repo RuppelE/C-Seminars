@@ -82,7 +82,7 @@ double[] GetArray(int Length, int min, int max)
      return array;
  }
 
- double MaxNumberArray (double[]array)
+double MaxNumberArray (double[]array)
 {
     double max = array[0];
 	for (int i = 0; i < array.Length; i++)
